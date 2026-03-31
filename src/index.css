@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-success: var(--color-success);
+  --color-success-foreground: var(--color-success-foreground);
+  --color-info: var(--color-info);
+  --color-info-foreground: var(--color-info-foreground);
+  --color-warning: var(--color-warning);
+  --color-warning-foreground: var(--color-warning-foreground);
+  --color-error: var(--color-error);
+  --color-error-foreground: var(--color-error-foreground);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --accent: #F2F3F0;
+  --accent-foreground: #111111;
+  --background: #F2F3F0;
+  --black: #000000;
+  --border: #CBCCC9;
+  --card: #FFFFFF;
+  --card-foreground: #111111;
+  --color-error: #E5DCDA;
+  --color-error-foreground: #8C1C00;
+  --color-info: #DFDFE6;
+  --color-info-foreground: #000066;
+  --color-success: #DFE6E1;
+  --color-success-foreground: #004D1A;
+  --color-warning: #E9E3D8;
+  --color-warning-foreground: #804200;
+  --destructive: #D93C15;
+  --foreground: #111111;
+  --input: #CBCCC9;
+  --muted: #F2F3F0;
+  --muted-foreground: #666666;
+  --popover: #FFFFFF;
+  --popover-foreground: #111111;
+  --primary: #FF8400;
+  --primary-foreground: #111111;
+  --radius-m: 16px;
+  --radius-none: 0;
+  --radius-pill: 999px;
+  --ring: #666666;
+  --secondary: #E7E8E5;
+  --secondary-foreground: #111111;
+  --sidebar: #E7E8E5;
+  --sidebar-accent: #CBCCC9;
+  --sidebar-accent-foreground: #18181b;
+  --sidebar-border: #CBCCC9;
+  --sidebar-foreground: #666666;
+  --sidebar-primary: #18181b;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-ring: #71717a;
+  --white: #FFFFFF;
+}
+
+.dark {
+  --accent: #111111;
+  --accent-foreground: #F2F3F0;
+  --background: #111111;
+  --border: #2E2E2E;
+  --card: #1A1A1A;
+  --card-foreground: #FFFFFF;
+  --color-error: #24100B;
+  --color-error-foreground: #FF5C33;
+  --color-info: #222229;
+  --color-info-foreground: #B2B2FF;
+  --color-success: #222924;
+  --color-success-foreground: #B6FFCE;
+  --color-warning: #291C0F;
+  --color-warning-foreground: #FF8400;
+  --destructive: #FF5C33;
+  --foreground: #FFFFFF;
+  --input: #2E2E2E;
+  --muted: #2E2E2E;
+  --muted-foreground: #B8B9B6;
+  --popover: #1A1A1A;
+  --popover-foreground: #FFFFFF;
+  --primary: #FF8400;
+  --primary-foreground: #111111;
+  --secondary: #2E2E2E;
+  --secondary-foreground: #FFFFFF;
+  --sidebar: #18181b;
+  --sidebar-accent: #2a2a30;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #ffffff1a;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #18181b;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-ring: #71717a;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-base font-normal font-sans;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
